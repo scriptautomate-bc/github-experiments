@@ -29,7 +29,6 @@ body:
         - pip
         - git
         - other (please specify in bug details)
-      default: 3006.x
   - type: dropdown
     id: salt-version
     validations:
@@ -41,13 +40,12 @@ body:
       options:
         - 3006.x
         - 3007.x
-      default: 3006.x
   - type: dropdown
     id: operating-systems
     validations:
       required: true
     attributes:
-      label: What supported OS are you seeing the problem on?
+      label: What supported OS are you seeing the problem on? (If bug appears on an unsupported OS, please open a GitHub Discussion instead)
       multiple: true
       options:
         - almalinux-8
